@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D</title>
+    <style>
+        :root{
+            --main-bg-color:#2874f0;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: var(--main-bg-color);
+            font-family: 'lato', sans-serif;
+        }
+        nav{
+            display: flex;
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo img{
+            width: 50px;
+            padding: 0 25px;
+        }
+        nav ul{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        nav ul li{
+            list-style: none;
+            padding: 0 20px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover{
+            font-weight: bolder;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+        }
+        .search input{
+            width: 30vw;
+            height: 27px;
+            border-radius: 5px;
+            margin: 0 16px 0 56px;
+            padding: 0 12px;
+        }
+        .search button{
+            font-family: 'Luto' sans-serif;
+            font-weight: 900;
+        }
+        .btn{
+            padding: 5px 10px;
+            color: white;
+            background: var(--main-bg-color);
+            border: 2px solid white;
+            border-radius: 7px;
+            cursor: pointer;
+            /* font-family: 'luto' sans-serif; */
+        }
+        footer{
+            background: #000;
+            color: white;
+            text-align: center;
+        }
+        .slider{
+            margin: 12px auto;
+            overflow: hidden;
+            width: 80vw;
+
+
+        }
+        .card{
+            max-width: 91vw;
+            margin: auto;
+        }
+        .card-item{
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 15px;
+        }
+        .card h2{
+            font-family: 'Lato', sans-serif;
+        }
+        .container{
+            min-height: calc(100vh -50px 12vh);
+        }
+        .my-2{
+            margin: 26px 0;
+        }
+        .my-1{
+            margin: 5px 0;
+        }
+        .flex-all-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .text-center{
+            text-align: center;
+        }
+
+        @media screen and (max-width:1000px){
+            body{
+                background-color: white;
+            }
+            nav{
+                flex-direction: column;
+            }
+            .log{
+                justify-content: center;
+                margin: 12px 0;
+            }
+            nav ul{
+                justify-content: center;
+                height: 34vh;
+            }
+            .search{
+                justify-content: center;
+            }
+            .search input{
+                margin: 12px 16px;
+            }
+            .slider{
+                height: 33vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="log">
+                <img src="logo.svg">
+            </div>
+            <ul>
+                <li><a href="LM.html">Home</a></li>
+                <li><a href="webside2.html">About</a></li>
+                <li><a href="website3.html">Content</a></li>
+                <div class="search">
+                    <input type="text" name="" id="" placeholder="SearchHere">
+                <button  class="btn">Search</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="container">
+             <div class="slider">
+                 <img src="https://source.unsplash.com/1600x500/?shopping, ecommerce" alt="" srcset="">
+                </div>
+                <div class="card">
+                 <h2 class="my-2">Join the Computer Parts</h2>
+                 <div class="card-item">
+                    <img src="https://source.unsplash.com/160x160/?Cricket, ecommerce" alt="" width="160px">
+                    <div class="lines">
+                      <p class="text-center my-1">Cricket Bats</p>
+                      <p class="text-center my-1">Min 20% off</p>
+                      <p class="text-center my-1">Grab Now!</p>
+                    </div>
+            </div>
+            <div class="card-item">
+                <img src="https://source.unsplash.com/160x160/?Keyboard, ecommerce" alt="" width="160px">
+                <div class="lines">
+                  <p class="text-center my-1">Keyboard</p>
+                  <p class="text-center my-1">Min 20% off</p>
+                  <p class="text-center my-1">Grab Now!</p>
+                </div>
+        </div>
+        <div class="card-item">
+            <img src="https://source.unsplash.com/160x160/?Mointer, ecommerce" alt="" width="160px">
+            <div class="lines">
+              <p class="text-center my-1">Mointer</p>
+              <p class="text-center my-1">Min 20% off</p>
+              <p class="text-center my-1">Grab Now!</p>
+            </div>
+    </div>
+    <div class="card-item">
+        <img src="https://source.unsplash.com/160x160/?cpu, ecommerce" alt="" width="160px">
+        <div class="lines">
+          <p class="text-center my-1">C.P.U</p>
+          <p class="text-center my-1">Min 20% off</p>
+          <p class="text-center my-1">Grab Now!</p>
+        </div>
+</div>
+<div class="card-item">
+    <img src="https://source.unsplash.com/160x160/?Printer, ecommerce" alt="" width="160px">
+    <div class="lines">
+      <p class="text-center my-1">Printer</p>
+      <p class="text-center my-1">Min 20% off</p>
+      <p class="text-center my-1">Grab Now!</p>
+    </div>
+</div>
+<div class="card-item">
+    <img src="https://source.unsplash.com/160x160/?Speaker, ecommerce" alt="" width="160px">
+    <div class="lines">
+      <p class="text-center my-1">Speaker</p>
+      <p class="text-center my-1">Min 20% off</p>
+      <p class="text-center my-1">Grab Now!</p>
+    </div>
+</div>
+<div class="card-item">
+    <img src="https://source.unsplash.com/160x160/?Camera, ecommerce" alt="" width="160px">
+    <div class="lines">
+      <p class="text-center my-1">Camera</p>
+      <p class="text-center my-1">Min 20% off</p>
+      <p class="text-center my-1">Grab Now!</p>
+    </div>
+</div>
+
+            </div>
+            <div class="card">
+                <h2 class="my-2">Join the Computer Parts</h2>
+                <div class="card-item">
+                   <img src="https://source.unsplash.com/160x160/?Cricket, ecommerce" alt="" width="160px">
+                   <div class="lines">
+                     <p class="text-center my-1">Cricket Bats</p>
+                     <p class="text-center my-1">Min 20% off</p>
+                     <p class="text-center my-1">Grab Now!</p>
+                   </div>
+           </div>
+           <div class="card-item">
+               <img src="https://source.unsplash.com/160x160/?Keyboard, ecommerce" alt="" width="160px">
+               <div class="lines">
+                 <p class="text-center my-1">Keyboard</p>
+                 <p class="text-center my-1">Min 20% off</p>
+                 <p class="text-center my-1">Grab Now!</p>
+               </div>
+       </div>
+       <div class="card-item">
+           <img src="https://source.unsplash.com/160x160/?Mointer, ecommerce" alt="" width="160px">
+           <div class="lines">
+             <p class="text-center my-1">Mointer</p>
+             <p class="text-center my-1">Min 20% off</p>
+             <p class="text-center my-1">Grab Now!</p>
+           </div>
+   </div>
+   <div class="card-item">
+       <img src="https://source.unsplash.com/160x160/?cpu, ecommerce" alt="" width="160px">
+       <div class="lines">
+         <p class="text-center my-1">C.P.U</p>
+         <p class="text-center my-1">Min 20% off</p>
+         <p class="text-center my-1">Grab Now!</p>
+       </div>
+</div>
+<div class="card-item">
+   <img src="https://source.unsplash.com/160x160/?Printer, ecommerce" alt="" width="160px">
+   <div class="lines">
+     <p class="text-center my-1">Printer</p>
+     <p class="text-center my-1">Min 20% off</p>
+     <p class="text-center my-1">Grab Now!</p>
+   </div>
+</div>
+<div class="card-item">
+   <img src="https://source.unsplash.com/160x160/?Speaker, ecommerce" alt="" width="160px">
+   <div class="lines">
+     <p class="text-center my-1">Speaker</p>
+     <p class="text-center my-1">Min 20% off</p>
+     <p class="text-center my-1">Grab Now!</p>
+   </div>
+</div>
+<div class="card-item">
+   <img src="https://source.unsplash.com/160x160/?Camera, ecommerce" alt="" width="160px">
+   <div class="lines">
+     <p class="text-center my-1">Camera</p>
+     <p class="text-center my-1">Min 20% off</p>
+     <p class="text-center my-1">Grab Now!</p>
+   </div>
+</div>
+
+           </div>
+           <div class="card">
+            <h2 class="my-2">Join the Computer Parts</h2>
+            <div class="card-item">
+               <img src="https://source.unsplash.com/160x160/?Cricket, ecommerce" alt="" width="160px">
+               <div class="lines">
+                 <p class="text-center my-1">Cricket Bats</p>
+                 <p class="text-center my-1">Min 20% off</p>
+                 <p class="text-center my-1">Grab Now!</p>
+               </div>
+       </div>
+       <div class="card-item">
+           <img src="https://source.unsplash.com/160x160/?Keyboard, ecommerce" alt="" width="160px">
+           <div class="lines">
+             <p class="text-center my-1">Keyboard</p>
+             <p class="text-center my-1">Min 20% off</p>
+             <p class="text-center my-1">Grab Now!</p>
+           </div>
+   </div>
+   <div class="card-item">
+       <img src="https://source.unsplash.com/160x160/?Mointer, ecommerce" alt="" width="160px">
+       <div class="lines">
+         <p class="text-center my-1">Mointer</p>
+         <p class="text-center my-1">Min 20% off</p>
+         <p class="text-center my-1">Grab Now!</p>
+       </div>
+</div>
+<div class="card-item">
+   <img src="https://source.unsplash.com/160x160/?cpu, ecommerce" alt="" width="160px">
+   <div class="lines">
+     <p class="text-center my-1">C.P.U</p>
+     <p class="text-center my-1">Min 20% off</p>
+     <p class="text-center my-1">Grab Now!</p>
+   </div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Printer, ecommerce" alt="" width="160px">
+<div class="lines">
+ <p class="text-center my-1">Printer</p>
+ <p class="text-center my-1">Min 20% off</p>
+ <p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Speaker, ecommerce" alt="" width="160px">
+<div class="lines">
+ <p class="text-center my-1">Speaker</p>
+ <p class="text-center my-1">Min 20% off</p>
+ <p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Camera, ecommerce" alt="" width="160px">
+<div class="lines">
+ <p class="text-center my-1">Camera</p>
+ <p class="text-center my-1">Min 20% off</p>
+ <p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+
+       </div>
+       <div class="card">
+        <h2 class="my-2">Join the Computer Parts</h2>
+        <div class="card-item">
+           <img src="https://source.unsplash.com/160x160/?Cricket, ecommerce" alt="" width="160px">
+           <div class="lines">
+             <p class="text-center my-1">Cricket Bats</p>
+             <p class="text-center my-1">Min 20% off</p>
+             <p class="text-center my-1">Grab Now!</p>
+           </div>
+   </div>
+   <div class="card-item">
+       <img src="https://source.unsplash.com/160x160/?Keyboard, ecommerce" alt="" width="160px">
+       <div class="lines">
+         <p class="text-center my-1">Keyboard</p>
+         <p class="text-center my-1">Min 20% off</p>
+         <p class="text-center my-1">Grab Now!</p>
+       </div>
+</div>
+<div class="card-item">
+   <img src="https://source.unsplash.com/160x160/?Mointer, ecommerce" alt="" width="160px">
+   <div class="lines">
+     <p class="text-center my-1">Mointer</p>
+     <p class="text-center my-1">Min 20% off</p>
+     <p class="text-center my-1">Grab Now!</p>
+   </div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?cpu, ecommerce" alt="" width="160px">
+<div class="lines">
+ <p class="text-center my-1">C.P.U</p>
+ <p class="text-center my-1">Min 20% off</p>
+ <p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Printer, ecommerce" alt="" width="160px">
+<div class="lines">
+<p class="text-center my-1">Printer</p>
+<p class="text-center my-1">Min 20% off</p>
+<p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Speaker, ecommerce" alt="" width="160px">
+<div class="lines">
+<p class="text-center my-1">Speaker</p>
+<p class="text-center my-1">Min 20% off</p>
+<p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Camera, ecommerce" alt="" width="160px">
+<div class="lines">
+<p class="text-center my-1">Camera</p>
+<p class="text-center my-1">Min 20% off</p>
+<p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+
+   </div>
+   <div class="card">
+    <h2 class="my-2">Join the Computer Parts</h2>
+    <div class="card-item">
+       <img src="https://source.unsplash.com/160x160/?Cricket, ecommerce" alt="" width="160px">
+       <div class="lines">
+         <p class="text-center my-1">Cricket Bats</p>
+         <p class="text-center my-1">Min 20% off</p>
+         <p class="text-center my-1">Grab Now!</p>
+       </div>
+</div>
+<div class="card-item">
+   <img src="https://source.unsplash.com/160x160/?Keyboard, ecommerce" alt="" width="160px">
+   <div class="lines">
+     <p class="text-center my-1">Keyboard</p>
+     <p class="text-center my-1">Min 20% off</p>
+     <p class="text-center my-1">Grab Now!</p>
+   </div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Mointer, ecommerce" alt="" width="160px">
+<div class="lines">
+ <p class="text-center my-1">Mointer</p>
+ <p class="text-center my-1">Min 20% off</p>
+ <p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?cpu, ecommerce" alt="" width="160px">
+<div class="lines">
+<p class="text-center my-1">C.P.U</p>
+<p class="text-center my-1">Min 20% off</p>
+<p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Printer, ecommerce" alt="" width="160px">
+<div class="lines">
+<p class="text-center my-1">Printer</p>
+<p class="text-center my-1">Min 20% off</p>
+<p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Speaker, ecommerce" alt="" width="160px">
+<div class="lines">
+<p class="text-center my-1">Speaker</p>
+<p class="text-center my-1">Min 20% off</p>
+<p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+<div class="card-item">
+<img src="https://source.unsplash.com/160x160/?Camera, ecommerce" alt="" width="160px">
+<div class="lines">
+<p class="text-center my-1">Camera</p>
+<p class="text-center my-1">Min 20% off</p>
+<p class="text-center my-1">Grab Now!</p>
+</div>
+</div>
+
+</div>
+
+     </div>
+</main>
+
+
+    <footer class="flex-all-center">
+        <p>Copyright &copy; MyCart.com</p>
+    </footer>
+</body>
+</html>
